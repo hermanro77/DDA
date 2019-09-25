@@ -10,13 +10,13 @@ namespace WindowsFormsApp1 {
         private ArrayList names = new ArrayList();
 
 
-        public void AddName(string name, object sender, EventArgs e) {
+        public void AddName(string name) {
             if (!names.Contains(name)) {
                 names.Add(name);
             }
         }
 
-        public void EraseAll(object sender, EventArgs e) {
+        public void EraseAll() {
             names.Clear();
         }
 
@@ -26,8 +26,8 @@ namespace WindowsFormsApp1 {
     }
 
     interface IListaNomes {
-        void AddName(string name, object sender, EventArgs e);
+        void AddName(string name);
         String GetAllNames();
-        void EraseAll(object sender, EventArgs e);
+        void EraseAll();
     }
 }
