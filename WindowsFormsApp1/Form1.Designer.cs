@@ -64,9 +64,9 @@ namespace WindowsFormsApp1
             // 
             // addNameButton
             // 
-            this.addNameButton.Location = new System.Drawing.Point(301, 36);
+            this.addNameButton.Location = new System.Drawing.Point(299, 30);
             this.addNameButton.Name = "addNameButton";
-            this.addNameButton.Size = new System.Drawing.Size(103, 26);
+            this.addNameButton.Size = new System.Drawing.Size(103, 38);
             this.addNameButton.TabIndex = 1;
             this.addNameButton.Text = "Add name";
             this.addNameButton.Click += new System.EventHandler(this.AddName);
@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
             // 
             this.getAllNamesButton.Location = new System.Drawing.Point(171, 100);
             this.getAllNamesButton.Name = "getAllNamesButton";
-            this.getAllNamesButton.Size = new System.Drawing.Size(109, 50);
+            this.getAllNamesButton.Size = new System.Drawing.Size(109, 61);
             this.getAllNamesButton.TabIndex = 3;
             this.getAllNamesButton.Text = "Get all names";
             this.getAllNamesButton.Click += new System.EventHandler(this.GetAllNames);
@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
             // 
             this.eraseAllNamesButton.Location = new System.Drawing.Point(30, 100);
             this.eraseAllNamesButton.Name = "eraseAllNamesButton";
-            this.eraseAllNamesButton.Size = new System.Drawing.Size(114, 50);
+            this.eraseAllNamesButton.Size = new System.Drawing.Size(114, 61);
             this.eraseAllNamesButton.TabIndex = 2;
             this.eraseAllNamesButton.Text = "Erase all names";
             this.eraseAllNamesButton.Click += new System.EventHandler(this.EraseAllNames);
