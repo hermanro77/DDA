@@ -56,53 +56,60 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.addNameButton = new Button();
-            this.getAllNamesButton = new Button();
-            this.eraseAllNamesButton = new Button();
-            this.textBox1 = new TextBox();
-
-            //textbox1
-            textBox1.Visible = true;
-            textBox1.Size = new Size(30, 60);
-            textBox1.Location = new Point(80, 30);
-            textBox1.Width = 250;
-            textBox1.Height = 50;
-            textBox1.ForeColor = Color.Black;
-            textBox1.BorderStyle = BorderStyle.Fixed3D;
-            this.Controls.Add(textBox1);
-
-
-            //addNameButton
-            addNameButton.Size = new Size(50, 50);
-            addNameButton.Location = new Point(30, 30);
-            addNameButton.Text = "Add name";
-            this.Controls.Add(addNameButton);
-            addNameButton.Click += new EventHandler(AddName);
-
-            //eraseAllNamesButton
-            eraseAllNamesButton.Size = new Size(50, 50);
-            eraseAllNamesButton.Location = new Point(30, 100);
-            eraseAllNamesButton.Text = "Erase all names";
-            this.Controls.Add(eraseAllNamesButton);
-            eraseAllNamesButton.Click += new EventHandler(EraseAllNames);
-
-            //getAllNamesButton
-            getAllNamesButton.Size = new Size(50, 50);
-            getAllNamesButton.Location = new Point(80, 100);
-            getAllNamesButton.Text = "Get all names";
-            this.Controls.Add(getAllNamesButton);
-            getAllNamesButton.Click += new EventHandler(GetAllNames);
-
-
-            this.components = new System.ComponentModel.Container();
+            this.addNameButton = new System.Windows.Forms.Button();
+            this.getAllNamesButton = new System.Windows.Forms.Button();
+            this.eraseAllNamesButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // addNameButton
+            // 
+            this.addNameButton.Location = new System.Drawing.Point(301, 36);
+            this.addNameButton.Name = "addNameButton";
+            this.addNameButton.Size = new System.Drawing.Size(103, 26);
+            this.addNameButton.TabIndex = 1;
+            this.addNameButton.Text = "Add name";
+            this.addNameButton.Click += new System.EventHandler(this.AddName);
+            // 
+            // getAllNamesButton
+            // 
+            this.getAllNamesButton.Location = new System.Drawing.Point(171, 100);
+            this.getAllNamesButton.Name = "getAllNamesButton";
+            this.getAllNamesButton.Size = new System.Drawing.Size(109, 50);
+            this.getAllNamesButton.TabIndex = 3;
+            this.getAllNamesButton.Text = "Get all names";
+            this.getAllNamesButton.Click += new System.EventHandler(this.GetAllNames);
+            // 
+            // eraseAllNamesButton
+            // 
+            this.eraseAllNamesButton.Location = new System.Drawing.Point(30, 100);
+            this.eraseAllNamesButton.Name = "eraseAllNamesButton";
+            this.eraseAllNamesButton.Size = new System.Drawing.Size(114, 50);
+            this.eraseAllNamesButton.TabIndex = 2;
+            this.eraseAllNamesButton.Text = "Erase all names";
+            this.eraseAllNamesButton.Click += new System.EventHandler(this.EraseAllNames);
+            // 
+            // textBox1
+            // 
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(30, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 26);
+            this.textBox1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addNameButton);
+            this.Controls.Add(this.eraseAllNamesButton);
+            this.Controls.Add(this.getAllNamesButton);
+            this.Name = "Form1";
             this.Text = "Form1";
-
-            components.Add(addNameButton);
-            components.Add(eraseAllNamesButton);
-            components.Add(getAllNamesButton);
-            components.Add(textBox1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
