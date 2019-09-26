@@ -36,19 +36,15 @@ namespace WindowsFormsApp1
         private void AddName(object sender, EventArgs e) {
             if (this.textBox1.Text.Length > 0) {
                 listofnames.AddName(this.textBox1.Text);
+                this.textBox1.Clear();
             }
-            Console.WriteLine(listofnames.GetAllNames());
-            Console.WriteLine("HEY");
         }
         private void EraseAllNames(object sender, EventArgs e) {
             listofnames.EraseAll();
-            Console.WriteLine(listofnames.GetAllNames());
-            Console.WriteLine("HEY");
         }
         private void GetAllNames(object sender, EventArgs e) {
             String names = listofnames.GetAllNames();
             MessageBox.Show(names);
-            Console.WriteLine("HEY");
         }
         /// <summary>
         /// Required method for Designer support - do not modify
